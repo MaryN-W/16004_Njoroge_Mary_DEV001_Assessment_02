@@ -1,0 +1,105 @@
+Meal Planner Application Documentation
+
+Overview
+The Meal Planner is a Python-based Command Line Interface (CLI) application designed to help users manage their meals, plan weekly menus, and generate grocery lists. The application aims to save time and reduce food waste by automating meal planning and grocery list generation.
+
+Features
+Input Meals and Ingredients:
+
+Users can input new meals along with the required ingredients for each meal.
+Plan Weekly Meals:
+
+Users can assign meals to specific days of the week to create a weekly meal plan.
+Grocery List Generator:
+
+The app automatically compiles a list of all ingredients required for the planned meals.
+Edit Meal Details:
+
+Users can add, remove, or update meals and their ingredients.
+Save and Load Data:
+
+Meal plans and grocery lists can be saved in a CSV file for future use or reference.
+
+Purpose
+The Meal Planner application is designed to:
+
+Help users save time by organizing their meals efficiently.
+Minimize food waste by providing an accurate grocery list based on meal planning.
+Simplify meal management with options to edit, remove, and reuse meal plans.
+Getting Started
+Follow the instructions below to set up and run the application on your system.
+
+Prerequisites
+Python 3.7 or later
+A terminal or command prompt to run the CLI application
+
+Installation
+Clone the repository:
+git clone https://github.com/MaryN-W/16004_Njoroge_Mary_DEV001_Assessment_02.git
+cd meal-planner
+Run the application:
+python main.py
+
+Required Files and Packages
+1. recipes.csv
+Description: A CSV file that stores the meal plans. This file contains two columns:
+Meal Name: The name of the meal.
+Ingredients: A comma-separated list of ingredients for each meal.
+Legal and Ethical Considerations:
+Data Ownership: The data in this file is owned by the users of the application, ensuring no third-party data is accessed.
+Privacy: The file contains no personal user information unless explicitly added, maintaining privacy.
+
+2. Python Libraries
+csv: A standard Python library for reading and writing CSV files. It is used to store and retrieve meals and ingredients data.
+License: Python Software Foundation License (PSFL).
+Legal Impact: The PSFL is a permissive open-source license that allows free use, modification, and distribution without many restrictions.
+Ethical Considerations: This library does not introduce any ethical concerns and is freely available for use.
+
+os: A standard Python library for interacting with the operating system, used for checking file existence and manipulating file paths.
+License: Python Software Foundation License (PSFL).
+Legal Impact: It is part of the Python standard library, so it can be freely used, modified, and distributed under the PSFL.
+Ethical Considerations: No ethical concerns arise, as it only interacts with the file system and does not process sensitive data.
+
+logging: A Python standard library used to implement logging functionality, which is used for error and event tracking in the app.
+License: Python Software Foundation License (PSFL).
+Legal Impact: The logging library is part of Python's standard library and is free to use and modify under the PSFL.
+Ethical Considerations: The logging library is used for internal error reporting and debugging, which does not impact user privacy or data security.
+
+bcrypt: A third-party library for hashing and verifying passwords securely.
+
+License: MIT License.
+Legal Impact: The MIT License is permissive and allows free use, modification, and distribution of the software. The only requirement is that the original license and copyright notice be included in any redistributed copies or substantial portions of the software.
+Ethical Considerations: bcrypt is widely regarded as a secure and effective method for password hashing. Its inclusion ensures that user passwords are securely stored and reduces the risk of unauthorized access, addressing privacy concerns.
+
+3. utils/folder_manager.py
+Purpose: This custom utility ensures that the necessary data folder exists where the recipes.csv file is stored.
+Legal and Ethical Considerations:
+No Third-Party Libraries: This file is a custom utility and does not use third-party dependencies, ensuring no legal issues related to licensing.
+
+4. utils/logger.py
+Purpose: This custom utility handles the logging of messages (info, error, warning) in the application.
+
+Legal and Ethical Considerations:
+No Third-Party Libraries: The logger is a custom implementation and does not rely on external libraries, ensuring no legal licensing concerns.
+Legal and Ethical Impact of Licenses
+
+Open-Source Libraries
+Python Software Foundation License (PSFL):
+
+Legal Impact: The PSFL is permissive and allows the software to be used, modified, and distributed with minimal restrictions. Redistribution of modified versions of the software must include the original license and disclaimers.
+Ethical Considerations: The PSFL encourages sharing and collaboration, ensuring that Python’s ecosystem remains open and accessible to developers worldwide.
+MIT License (bcrypt):
+
+Legal Impact: The MIT License is permissive and allows unrestricted use, modification, and distribution. The only requirement is that the original license and copyright notice are included in all copies or substantial portions of the software.
+Ethical Considerations: bcrypt ensures that user credentials are stored securely, protecting users' personal data. It is a trusted password hashing algorithm that adheres to best practices in security, addressing ethical concerns related to user privacy.
+Custom Code and User Data
+Legal Impact: The code developed for this application (e.g., RecipeController, folder_manager.py, and logger.py) is original and owned by the developer. If the code is shared, it's advisable to use an open-source license (e.g., MIT License) to clarify how others can use, modify, and distribute the code.
+Ethical Considerations: If personal data were collected in the future, the application would need to comply with data protection regulations (e.g., GDPR, CCPA) to ensure that user privacy is respected.
+
+Dependencies and Libraries
+No External Dependencies: Other than bcrypt, the application primarily uses Python’s standard libraries and custom utilities. This reduces licensing concerns and ensures that the application is simple and self-contained.
+Future Considerations: If additional libraries (e.g., for database integration, authentication, or UI frameworks) are introduced, it’s important to review their licenses to ensure they are compatible with the overall project.
+
+Conclusion
+The Meal Planner application helps users save time, reduce food waste, and organize meal planning effectively. By using Python’s powerful standard libraries and secure password hashing with bcrypt, the application remains lightweight, efficient, and secure. The code is open-source and free to use, modify, and distribute under the Python Software Foundation License and MIT License (for bcrypt). The app also ensures user privacy and data security through responsible handling of credentials and meal data.
+
